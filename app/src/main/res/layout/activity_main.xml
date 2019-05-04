@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/name_field"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="75dp"
+        android:hint="Имя"
+        app:layout_constraintBottom_toTopOf="@+id/addLine"
+        app:layout_constraintEnd_toStartOf="@+id/secondName"
+        app:layout_constraintStart_toEndOf="@+id/fam_field"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+
+        android:id="@+id/secondName"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="75dp"
+        android:hint="Отчество"
+        app:layout_constraintBottom_toTopOf="@+id/ChangeToIvanov"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/fam_field"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginBottom="75dp"
+        android:hint="Фамилия"
+        app:layout_constraintBottom_toTopOf="@+id/printInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/printInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="240dp"
+        android:text="Print"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fam_field" />
+
+    <Button
+        android:id="@+id/addLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="240dp"
+        android:text="addLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ChangeToIvanov"
+        app:layout_constraintStart_toEndOf="@+id/printInfo"
+        app:layout_constraintTop_toBottomOf="@+id/name_field" />
+
+    <Button
+        android:id="@+id/ChangeToIvanov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="240dp"
+        android:text="Ivanov"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondName" />
+
+    <Button
+        android:enabled="true"
+        android:id="@+id/Upgrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="167dp"
+        android:layout_marginBottom="153dp"
+        android:text="Upgrade"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addLine" />
+</android.support.constraint.ConstraintLayout>
